@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta name="facebook-domain-verification" content="0zex3x8092mhudxvfy595788ldwl4w" />
+
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcos Valentin Francisco LTDA</title>
+  <meta name="og:title" content="Marcos Valentin Francisco LTDA" />
+  <meta name="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Marcos Valentin Francisco LTDA" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --steel: #2b2f33;
+      --steel-dark: #16181a;
+      --ice: #f5f2ec;
+      --ice-line: #e6ded0;
+      --ink: #201d18;
+      --amber: #e8871e;
+      --amber-dark: #c96f0f;
+      --white: #fffdf9;
+      --text: #47423a;
+      --muted: #7a7266;
+      --border: #e7e0d3;
+      --footer-bg: #14120f;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Helvetica Neue', 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+    }
+
+    h1, h2, h3, .nav-brand, .logo-initial {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      letter-spacing: -0.01em;
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 64px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+      border-bottom: 3px solid var(--amber);
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+    }
+    .nav-brand .logo-initial {
+      background: var(--amber);
+      color: var(--ink);
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      list-style: none;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.78);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--amber); }
+    .nav-links .btn-nav {
+      background: var(--steel);
+      color: var(--white);
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+    .nav-links .btn-nav:hover { background: var(--steel-dark); }
+
+    /* HERO */
+    #home {
+      background:
+        repeating-linear-gradient(135deg, rgba(255,255,255,0.03) 0px, rgba(255,255,255,0.03) 2px, transparent 2px, transparent 26px),
+        linear-gradient(160deg, var(--ink) 0%, var(--steel) 100%);
+      color: var(--white);
+      padding: 5.5rem 2rem 4.5rem;
+      text-align: center;
+      position: relative;
+    }
+    #home .eyebrow {
+      font-family: 'Helvetica Neue', sans-serif;
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: var(--amber);
+      padding: 0.35rem 0.9rem;
+      border-radius: 4px;
+      margin-bottom: 1.3rem;
+    }
+    #home h1 {
+      font-size: clamp(1.7rem, 4.2vw, 2.7rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+    #home p {
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: rgba(255,255,255,0.78);
+    }
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .btn-primary {
+      background: var(--amber);
+      color: var(--ink);
+      padding: 0.75rem 1.6rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+      letter-spacing: 0.02em;
+    }
+    .btn-primary:hover { background: var(--amber-dark); color: var(--white); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.5);
+      padding: 0.75rem 1.6rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.1); }
+
+    /* SECTIONS */
+    section { padding: 4.5rem 2rem; }
+    .container { max-width: 920px; margin: 0 auto; }
+    .section-label {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--amber-dark);
+      margin-bottom: 0.6rem;
+    }
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 1.95rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1.3rem;
+      line-height: 1.3;
+    }
+    p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    p:last-child { margin-bottom: 0; }
+
+    /* SOBRE */
+    #sobre { background: var(--ice); }
+    .sobre-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+      margin-top: 2rem;
+    }
+    @media (max-width: 640px) { .sobre-grid { grid-template-columns: 1fr; } }
+    .sobre-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--steel);
+      border-radius: 4px;
+      padding: 1.6rem;
+    }
+    .sobre-box h3 {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--amber-dark);
+      margin-bottom: 0.7rem;
+      font-weight: 800;
+    }
+    .sobre-box p { font-size: 0.95rem; }
+
+    /* SERVIÇOS / ATIVIDADES */
+    #servicos { background: var(--white); }
+    .services-list {
+      list-style: none;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .services-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1rem 1.2rem;
+      font-size: 0.94rem;
+      color: var(--text);
+    }
+    .services-list .tag {
+      flex-shrink: 0;
+      background: var(--ink);
+      color: var(--amber);
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      margin-top: 1px;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+    .services-list .tag.principal { background: var(--amber); color: var(--ink); }
+
+    /* DADOS */
+    #dados { background: var(--ice); }
+    .dados-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 2rem;
+      background: var(--white);
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .dados-table tr { border-bottom: 1px solid var(--border); }
+    .dados-table tr:last-child { border-bottom: none; }
+    .dados-table td {
+      padding: 0.85rem 1.15rem;
+      font-size: 0.9rem;
+    }
+    .dados-table td:first-child {
+      font-weight: 800;
+      color: var(--ink);
+      width: 38%;
+      background: #efe8da;
+    }
+    .dados-table td:last-child { color: var(--text); }
+    .dados-table a { color: var(--amber-dark); text-decoration: none; }
+    .dados-table a:hover { text-decoration: underline; }
+    .badge-ativa {
+      display: inline-block;
+      background: var(--steel);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 800;
+      padding: 0.15rem 0.6rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    /* SÓCIOS */
+    #titular { background: var(--white); }
+    .socio-card {
+      margin-top: 2rem;
+      background: var(--ice);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem 1.7rem;
+      display: flex;
+      align-items: center;
+      gap: 1.1rem;
+    }
+    .socio-card + .socio-card { margin-top: 1rem; }
+    .socio-avatar {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--amber);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .socio-card h3 { font-size: 1.02rem; color: var(--ink); margin-bottom: 0.25rem; }
+    .socio-card p { font-size: 0.9rem; margin-bottom: 0; font-family: 'Helvetica Neue', sans-serif; }
+
+    /* MISSÃO */
+    #missao { background: var(--ink); color: var(--white); }
+    #missao h2 { color: var(--white); }
+    #missao p { color: rgba(255,255,255,0.75); }
+    .missao-highlight {
+      margin-top: 2rem;
+      background: rgba(255,255,255,0.06);
+      border-left: 4px solid var(--amber);
+      border-radius: 4px;
+      padding: 1.3rem 1.5rem;
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.9);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    /* CONTATO */
+    #contato-section { background: var(--ice); }
+    .contato-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    @media (max-width: 800px) { .contato-grid { grid-template-columns: 1fr; } }
+    .contato-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1.5rem;
+    }
+    .contato-card h3 { font-size: 1rem; color: var(--ink); margin-bottom: 0.6rem; }
+    .contato-card p { font-size: 0.93rem; font-family: 'Helvetica Neue', sans-serif; }
+    .contato-card a { color: var(--amber-dark); text-decoration: none; }
+    .contato-card a:hover { text-decoration: underline; }
+
+    /* FOOTER */
+    footer {
+      background: var(--footer-bg);
+      color: rgba(255,255,255,0.6);
+      padding: 2.2rem 2rem;
+      font-size: 0.8rem;
+      text-align: center;
+      line-height: 1.8;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    footer strong { color: rgba(255,255,255,0.88); }
+    .footer-links {
+      margin-top: 0.9rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.6rem;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.8rem;
+    }
+    .footer-links a:hover { color: rgba(255,255,255,0.85); }
+    .back-top {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--amber);
+      color: var(--ink);
+      padding: 0.35rem 0.85rem;
+      border-radius: 3px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(20,18,15,0.62);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .modal-overlay.active { display: flex; }
+    .modal-box {
+      background: var(--white);
+      border-radius: 6px;
+      max-width: 660px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2rem;
+      position: relative;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .modal-box h2 { font-size: 1.2rem; margin-bottom: 1rem; }
+    .modal-box h3 { font-size: 0.95rem; color: var(--amber-dark); margin: 1.2rem 0 0.4rem; }
+    .modal-box p, .modal-box li { font-size: 0.88rem; color: var(--muted); }
+    .modal-box ul { padding-left: 1.2rem; }
+    .modal-close {
+      position: absolute;
+      top: 1rem; right: 1rem;
+      background: none; border: none;
+      font-size: 1.3rem; cursor: pointer; color: var(--muted);
+    }
+
+    /* Stamp badge signature element */
+    .stamp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 2px solid var(--amber);
+      color: var(--white);
+      background: rgba(232,135,30,0.18);
+      border-radius: 4px;
+      padding: 0.3rem 0.8rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    /* MOBILE NAV */
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      nav { padding: 0 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="home">
+  <a class="nav-brand" href="#home">
+    <span class="logo-initial">M</span>
+    Marcos Valentin Francisco LTDA
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Atividades</a></li>
+    <li><a href="#dados">Dados oficiais</a></li>
+    <li><a href="https://wa.me/5512987670895?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn-nav" target="_blank" rel="noopener">Contato</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero-section" style="padding:0;">
+  <div id="home" style="padding:5.5rem 2rem 4.5rem; text-align:center;">
+    <div class="eyebrow">Locação de Máquinas e Equipamentos</div>
+    <h1>Marcos Valentin Francisco LTDA</h1>
+    <p>Aluguel de máquinas e equipamentos para construção, andaimes, veículos e ferragens, com agilidade e confiança para sua obra.</p>
+    <p style="color:rgba(255,255,255,0.78); max-width:680px; margin:0 auto 2rem;">Atuamos em Americana/SP, atendendo clientes que buscam soluções em locação de equipamentos e materiais para construção civil.</p>
+    <div class="hero-btns">
+      <a href="#servicos" class="btn-primary">Ver atividades</a>
+      <a href="https://wa.me/5512987670895?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." class="btn-secondary" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="container">
+    <div class="section-label">QUEM SOMOS?</div>
+    <h2>Quem somos</h2>
+    <p><strong>Marcos Valentin Francisco LTDA</strong>, registrada sob o CNPJ 50.341.777/0001-98 e com início de atividades em 17/04/2023, está localizada em Americana/SP.</p>
+    <p>A empresa atua no ramo de aluguel de máquinas e equipamentos para construção sem operador. Conforme seu cadastro público, é constituída como Sociedade Empresária Limitada, enquadrada como Micro Empresa e optante pelo Simples Nacional desde 17/04/2023.</p>
+    <div class="sobre-grid">
+      <div class="sobre-box">
+        <h3>Nossa atuação</h3>
+        <p>Oferecemos aluguel de máquinas e equipamentos para construção, andaimes, locação de automóveis sem condutor e comércio varejista de ferragens e ferramentas, com agilidade, segurança e compromisso com nossos clientes.</p>
+      </div>
+      <div class="sobre-box">
+        <h3>Endereço cadastral</h3>
+        <p>Rua Maria Cecilia Pantano Dei Santi, 180<br>Jardim dos Pinheiros<br>Americana – SP, CEP 13472-636</p>
+        <p style="margin-top:0.8rem;">Na Marcos Valentin Francisco LTDA, valorizamos pontualidade, confiabilidade e proximidade com nossos clientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS / ATIVIDADES -->
+<section id="servicos">
+  <div class="container">
+    <div class="section-label">O QUE FAZEMOS</div>
+    <h2>Atividades e serviços</h2>
+    <ul class="services-list">
+      <li><span class="tag principal">Principal</span> Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes (CNAE 77.32-2-01)</li>
+      <li><span class="tag">Secundária</span> Locação de automóveis sem condutor (CNAE 77.11-0-00)</li>
+      <li><span class="tag">Secundária</span> Comércio varejista de ferragens e ferramentas (CNAE 47.44-0-01)</li>
+      <li><span class="tag">Secundária</span> Aluguel de andaimes (CNAE 77.32-2-02)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- DADOS OFICIAIS -->
+<section id="dados">
+  <div class="container">
+    <div class="section-label">REGISTRO PÚBLICO</div>
+    <h2>Dados oficiais</h2>
+    <table class="dados-table">
+      <tr><td>Razão Social</td><td>Marcos Valentin Francisco LTDA</td></tr>
+      <tr><td>CNPJ</td><td>50.341.777/0001-98</td></tr>
+      <tr><td>Inscrição Estadual (SP)</td><td>165.651.540.111</td></tr>
+      <tr><td>Data de Abertura</td><td>17/04/2023 (3 anos, 2 meses e 19 dias)</td></tr>
+      <tr><td>Porte</td><td>Micro Empresa</td></tr>
+      <tr><td>Natureza Jurídica</td><td>Sociedade Empresária Limitada</td></tr>
+      <tr><td>Opção pelo MEI</td><td>Não</td></tr>
+      <tr><td>Opção pelo Simples</td><td>Sim</td></tr>
+      <tr><td>Data Opção Simples</td><td>17/04/2023</td></tr>
+      <tr><td>Capital Social</td><td>R$ 30.000,00</td></tr>
+      <tr><td>Tipo</td><td>Matriz</td></tr>
+      <tr><td>Situação Cadastral</td><td><span class="badge-ativa">ATIVA</span></td></tr>
+      <tr><td>Data da Situação</td><td>17/04/2023</td></tr>
+      <tr><td>Atividade Principal (CNAE)</td><td>77.32-2-01 — Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes</td></tr>
+      <tr><td>Atividades Secundárias (CNAE)</td><td>77.11-0-00 — Locação de automóveis sem condutor<br>47.44-0-01 — Comércio varejista de ferragens e ferramentas<br>77.32-2-02 — Aluguel de andaimes</td></tr>
+      <tr><td>Endereço</td><td>Rua Maria Cecilia Pantano Dei Santi, 180, Jardim dos Pinheiros, Americana – SP, CEP 13472-636</td></tr>
+      <tr><td>Município</td><td><a href="https://cnpj.biz/empresas/americana-sp" target="_blank" rel="noopener">Americana</a></td></tr>
+      <tr><td>Estado</td><td><a href="https://cnpj.biz/empresas/estado/SP" target="_blank" rel="noopener">São Paulo</a></td></tr>
+      <tr><td>Telefone</td><td>(12) 98767-0895</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- QUADRO DE SÓCIOS -->
+<section id="titular">
+  <div class="container">
+    <div class="section-label">QUADRO DE SÓCIOS E ADMINISTRADORES</div>
+    <h2>Sócios e administradores</h2>
+    <div class="socio-card">
+      <div class="socio-avatar">M</div>
+      <div>
+        <h3>Marcos Valentin Francisco</h3>
+        <p>Sócio-Administrador — Qualificação do responsável pela empresa: Sócio-Administrador</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSÃO -->
+<section id="missao">
+  <div class="container">
+    <div class="section-label" style="color:rgba(255,255,255,0.6);">NOSSA MISSÃO</div>
+    <h2>Nossa missão</h2>
+    <p>A missão da Marcos Valentin Francisco LTDA é oferecer soluções de locação de máquinas, equipamentos, andaimes e veículos com qualidade e regularidade, apoiando clientes que precisam de estrutura confiável para suas obras e operações diárias.</p>
+    <div class="missao-highlight">
+      Nosso compromisso é ser referência em locação de máquinas e equipamentos para construção: agilidade, segurança e proximidade com nossos clientes.
+    </div>
+    <div class="stamp">CNPJ ativo desde 2023</div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato-section">
+  <div class="container">
+    <div class="section-label">FALE CONOSCO</div>
+    <h2>Contato</h2>
+    <div class="contato-grid">
+      <div class="contato-card">
+        <h3>📞 Telefone</h3>
+        <p><a href="tel:+5512987670895">(12) 98767-0895</a></p>
+      </div>
+      <div class="contato-card">
+        <h3>💬 WhatsApp</h3>
+        <p><a href="https://wa.me/5512987670895?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Chamar no WhatsApp →</a></p>
+      </div>
+      <div class="contato-card">
+        <h3>✉️ E-mail</h3>
+        <p><a href="mailto:contato@marcosvalentinfranciscoltda.com.br">contato@marcosvalentinfranciscoltda.com.br</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Marcos Valentin Francisco LTDA</strong><br>
+  CNPJ: 50.341.777/0001-98 | Data de Abertura: 17/04/2023 | Porte: Micro Empresa | Natureza Jurídica: Sociedade Empresária Limitada | Situação Cadastral: ATIVA | Tipo: MATRIZ | Capital Social: R$ 30.000,00 | Endereço: Rua Maria Cecilia Pantano Dei Santi, 180, Jardim dos Pinheiros, Americana – SP, CEP 13472-636 | E-mail: contato@marcosvalentinfranciscoltda.com.br<br><br>
+  ©️ 2026 Marcos Valentin Francisco LTDA. Todos os direitos reservados.
+  <div class="footer-links">
+    <a href="#" id="privacy-link">Política de Privacidade</a>
+    <a href="#home" class="back-top">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<!-- MODAL PRIVACIDADE -->
+<div class="modal-overlay" id="privacy-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="modal-close-btn">✕</button>
+    <h2>Política de Privacidade</h2>
+    <p><strong>Marcos Valentin Francisco LTDA</strong><br>
+    CNPJ: 50.341.777/0001-98<br>
+    Endereço: Rua Maria Cecilia Pantano Dei Santi, 180, Jardim dos Pinheiros, Americana – SP, CEP 13472-636</p>
+
+    <h3>1. Finalidade</h3>
+    <p>Esta Política de Privacidade descreve como a Marcos Valentin Francisco LTDA coleta, utiliza, armazena e protege dados pessoais de clientes, parceiros, fornecedores e usuários que interagem conosco por meio de nossos canais de comunicação ou durante a contratação e execução de nossos serviços.</p>
+
+    <h3>2. Dados Coletados</h3>
+    <p>Coletamos apenas os dados necessários para as finalidades descritas nesta política, incluindo:</p>
+    <ul>
+      <li>Nome, e-mail, telefone e informações necessárias ao atendimento;</li>
+      <li>Registros de comunicação, pedidos, propostas e histórico de atendimento;</li>
+      <li>Dados de navegação (quando aplicável), conforme políticas das plataformas utilizadas.</li>
+    </ul>
+
+    <h3>3. Uso dos Dados</h3>
+    <p>Os dados pessoais coletados são utilizados para:</p>
+    <ul>
+      <li>Prestação e gestão dos serviços comercializados;</li>
+      <li>Comunicação operacional, administrativa e comercial;</li>
+      <li>Cumprimento de obrigações legais e regulatórias;</li>
+      <li>Melhoria contínua dos serviços e processos internos.</li>
+    </ul>
+
+    <h3>4. Compartilhamento de Dados</h3>
+    <p>Não comercializamos dados pessoais. O compartilhamento ocorre apenas com parceiros essenciais à execução dos serviços, mediante confidencialidade, ou quando exigido por lei, ordem judicial ou autoridade competente.</p>
+
+    <h3>5. Direitos do Titular (LGPD)</h3>
+    <p>Nos termos da LGPD (Lei nº 13.709/2018), o titular pode solicitar confirmação de tratamento, acesso, correção, anonimização, bloqueio, eliminação, portabilidade e revogação de consentimentos.</p>
+
+    <h3>6. Armazenamento e Segurança</h3>
+    <p>Adotamos medidas técnicas e administrativas adequadas para proteger os dados pessoais contra acessos não autorizados, perdas ou divulgações indevidas.</p>
+
+    <h3>7. Contato</h3>
+    <p>📞 Telefone: (12) 98767-0895<br>✉️ E-mail: contato@marcosvalentinfranciscoltda.com.br</p>
+
+    <p style="margin-top:1.2rem; font-size:0.8rem;">Marcos Valentin Francisco LTDA — CNPJ 50.341.777/0001-98 — ©️ 2026. Todos os direitos reservados.</p>
+  </div>
+</div>
+
+<script>
+  const privacyLink = document.getElementById('privacy-link');
+  const privacyModal = document.getElementById('privacy-modal');
+  const modalCloseBtn = document.getElementById('modal-close-btn');
+
+  privacyLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    privacyModal.classList.add('active');
+  });
+  modalCloseBtn.addEventListener('click', () => {
+    privacyModal.classList.remove('active');
+  });
+  privacyModal.addEventListener('click', (e) => {
+    if (e.target === privacyModal) privacyModal.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>
